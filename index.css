@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+}
+
+.note.new {
+  background-color: #cfbaf0;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #cfbaf0;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.save:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #a3c4f3;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  transform: scale(1.4);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233,233,233);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  padding: 7px;
+}
+
+.search input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-mode {
+  background-color: #fb8500;
+  padding-bottom: 80px;
+  transition: all 0.3s;
+}
+
+.toggle-mode textarea {
+  background-color: #023047;
+  color: #fff;
+}
+
+.toggle-mode .header-toggle {
+  background-color: #023047;
+  color: #fff;
+}
+
+.toggle-mode .note {
+  background-color: #023047;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.header-toggle {
+  font-weight: bold;
+  font-size: 17px;
+}
